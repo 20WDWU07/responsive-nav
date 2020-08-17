@@ -26,7 +26,7 @@
   }
 
   .col-4{
-    @include dimension(33%,200px);
+    @include dimension(33%,auto);
     border: 1px solid blue;
   }
 
