@@ -6,31 +6,31 @@
 
 @media screen and (max-width: 500px){
 .top-nav{
-  border: 1px solid black;
+  // border: 1px solid black;
   display: none;
 
   ul{
+    margin: 0 10px;
+    border: 1px solid maroon;
     li{
       list-style: none;
       height: 40px;
       width:100%;
-      background: lightblue;
-      border: 1px solid black;
+      background: pink;
+      margin: 1% 0;
+      text-align:center;
+      // border: 1px solid maroon;
       font-size: 1.2rem;
       font-weight: bold;
       a:link{
-        color: blue;
+        color: maroon;
         text-decoration: none;
 
       }
     }
   }
 }
-.menu-icon{
-  font-size: 45px;
-  color: blue;
-  margin: 15px;
-}
+
 .active{
   display: block;
 }
@@ -40,5 +40,32 @@
   // border: 1px solid green;
 }
 
+.banner-text{
+  display:none;
+}
 
+.logo-container{
+// border: 1px solid red;
+@include dimension(50%,100px);
+margin:0;
+float:left;
+padding: 10px 0;
+}
+.logo{
+  @include dimension(20%, auto);
+  margin: 10px;
+}
+.menu-icon-container{
+  float:left;
+  padding:10px 0;
+  @include dimension(50%,100px);
+  // border: 1px solid blue;
+}
+
+.menu-icon{
+  font-size: 45px;
+  color: maroon;
+  margin: 10px;
+  float:right;
+}
 }//mobile media query ends here

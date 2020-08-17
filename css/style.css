@@ -3,7 +3,16 @@
 
 .para {
   line-height: 22px;
-  letter-spacing: 1.2px; }
+  letter-spacing: 1.2px;
+  width: 60%;
+  text-align: center;
+  margin: auto; }
+
+.top-nav a:link {
+  font-size: 1rem; }
+
+body {
+  padding: 5%; }
 
 .row {
   width: 100%; }
@@ -28,68 +37,111 @@
 
 @media screen and (max-width: 500px) {
   .top-nav {
-    border: 1px solid black;
     display: none; }
-    .top-nav ul li {
-      list-style: none;
-      height: 40px;
-      width: 100%;
-      background: lightblue;
-      border: 1px solid black;
-      font-size: 1.2rem;
-      font-weight: bold; }
-      .top-nav ul li a:link {
-        color: blue;
-        text-decoration: none; }
-
-  .menu-icon {
-    font-size: 45px;
-    color: blue;
-    margin: 15px; }
+    .top-nav ul {
+      margin: 0 10px;
+      border: 1px solid maroon; }
+      .top-nav ul li {
+        list-style: none;
+        height: 40px;
+        width: 100%;
+        background: pink;
+        margin: 1% 0;
+        text-align: center;
+        font-size: 1.2rem;
+        font-weight: bold; }
+        .top-nav ul li a:link {
+          color: maroon;
+          text-decoration: none; }
 
   .active {
     display: block; }
 
   .col-12 {
     width: 100%;
-    height: auto; } }
-@media screen and (min-width: 501px) {
+    height: auto; }
+
+  .banner-text {
+    display: none; }
+
+  .logo-container {
+    width: 50%;
+    height: 100px;
+    margin: 0;
+    float: left;
+    padding: 10px 0; }
+
+  .logo {
+    width: 20%;
+    height: auto;
+    margin: 10px; }
+
+  .menu-icon-container {
+    float: left;
+    padding: 10px 0;
+    width: 50%;
+    height: 100px; }
+
   .menu-icon {
+    font-size: 45px;
+    color: maroon;
+    margin: 10px;
+    float: right; } }
+@media screen and (min-width: 501px) {
+  .menu-icon-container, .menu-icon {
     display: none; }
 
   .top-nav {
     background: black;
-    padding: 20px;
+    padding: 2%;
     display: block; }
     .top-nav ul {
-      padding: 20px; }
+      padding: 2% 0;
+      width: 100%; }
       .top-nav ul li {
-        width: 120px;
+        width: 19%;
         text-align: center;
         background: whitesmoke;
-        border: 1px solid yellow;
-        display: inline; }
-        .top-nav ul li a:link {
-          color: yellow; }
+        display: inline-block;
+        margin: 0 2.5%;
+        padding: 1% 0;
+        border-radius: 20px; }
+      .top-nav ul a:link {
+        color: yellow; }
+      .top-nav ul a:visited {
+        color: pink; }
 
   .banner-container {
-    background: url("../images/banner.jpg");
+    background-image: url("../images/banner.jpg");
+    background-size: 100vw 100vh;
     background-repeat: no-repeat;
-    background-size: 100vw auto;
-    height: 100vh; }
+    height: 600px; }
 
   .banner-text {
     font-size: 80px;
     color: maroon;
     text-align: center;
     margin-top: 20px;
-    background: white;
     height: 100px;
     width: 70%;
-    margin: auto; }
+    margin: auto;
+    display: block; }
 
   .col-4 {
     width: 33%;
-    height: auto; } }
+    height: auto; }
+
+  .logo-container {
+    width: 100%;
+    height: 100px;
+    margin: 0;
+    float: left;
+    padding: 10px 0; }
+
+  .logo {
+    width: 5%;
+    height: auto;
+    display: block;
+    margin: auto; } }
 
 /*# sourceMappingURL=style.css.map */

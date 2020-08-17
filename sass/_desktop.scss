@@ -1,36 +1,47 @@
 @media screen and (min-width: 501px){
-  .menu-icon{
+  .menu-icon-container, .menu-icon{
     display: none;
   }
   .top-nav{
       background: black;
-      padding: 20px;
+      padding: 2% ;
       display: block;
+      // border: 1px solid pink;
+
     ul{
-      padding: 20px;
+      padding: 2% 0;
+      width: 100%;
+      // margin:auto;
+      // border: 1px solid yellow;
       li{
-        width:120px;
+        width:19%;
         text-align: center;
 
         background: whitesmoke;
-        border: 1px solid yellow;
-        display: inline;
-
+        // border: 1px solid green;
+        display: inline-block;
+        margin: 0 2.5%;
+        padding:1% 0;
+        border-radius: 20px;
+      }
         a:link{
           color: yellow;
+
           // margin: 30px;
           // padding:20px;
         }
-      }
+        a:visited{
+          color: pink;
+        }
+
     }
   }
 
   .banner-container{
-    background: url('../images/banner.jpg');
+    background-image: url('../images/banner.jpg');
+    background-size: 100vw 100vh;
     background-repeat: no-repeat;
-    background-size: 100vw auto;
-    height: 100vh;
-    // width: 100vw;
+    height: 600px;
 
   }
   .banner-text{
@@ -38,15 +49,32 @@
     color:maroon;
     text-align: center;
     margin-top: 20px;
-    background: white;
+    // background: white;
     height: 100px;
     width: 70%;
     margin:auto;
+    display:block;
   }
 
   .col-4{
     @include dimension(33%,auto);
     // border: 1px solid blue;
   }
+  .col-6{
 
+     // border: 1px solid red;
+  }
+  .logo-container{
+  // border: 1px solid red;
+  @include dimension(100%,100px);
+  margin:0;
+  float:left;
+  padding: 10px 0;
+  }
+  .logo{
+    @include dimension(5%, auto);
+    display:block;
+    margin:auto;
+
+  }
 }//desktop media query ends here
