@@ -1,0 +1,33 @@
+@media screen and (min-width: 501px){
+  .menu-icon{
+    display: none;
+  }
+  .top-nav{
+      background: black;
+      padding: 20px;
+      display: block;
+    ul{
+      padding: 20px;
+      li{
+        width:120px;
+        text-align: center;
+
+        background: whitesmoke;
+        border: 1px solid yellow;
+        display: inline;
+
+        a:link{
+          color: yellow;
+          // margin: 30px;
+          // padding:20px;
+        }
+      }
+    }
+  }
+
+  .col-4{
+    @include dimension(33%,200px);
+    border: 1px solid blue;
+  }
+
+}//desktop media query ends here

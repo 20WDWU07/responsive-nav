@@ -1,0 +1,13 @@
+.row{
+  width:100%;
+  border: 1px solid red;
+}
+.col{
+  float:left;
+}
+
+.clearfix::after{
+  clear:both;
+  display:table;
+  content:"";
+}
