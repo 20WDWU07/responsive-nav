@@ -72,6 +72,22 @@
         .top-nav ul li a:link {
           color: yellow; }
 
+  .banner-container {
+    background: url("../images/banner.jpg");
+    background-repeat: no-repeat;
+    background-size: 100vw auto;
+    height: 100vh; }
+
+  .banner-text {
+    font-size: 80px;
+    color: maroon;
+    text-align: center;
+    margin-top: 20px;
+    background: white;
+    height: 100px;
+    width: 70%;
+    margin: auto; }
+
   .col-4 {
     width: 33%;
     height: auto; } }

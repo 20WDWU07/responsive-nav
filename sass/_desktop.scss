@@ -25,6 +25,25 @@
     }
   }
 
+  .banner-container{
+    background: url('../images/banner.jpg');
+    background-repeat: no-repeat;
+    background-size: 100vw auto;
+    height: 100vh;
+    // width: 100vw;
+
+  }
+  .banner-text{
+    font-size: 80px;
+    color:maroon;
+    text-align: center;
+    margin-top: 20px;
+    background: white;
+    height: 100px;
+    width: 70%;
+    margin:auto;
+  }
+
   .col-4{
     @include dimension(33%,auto);
     // border: 1px solid blue;
