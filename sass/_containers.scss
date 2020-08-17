@@ -1,13 +1,20 @@
 .row{
   width:100%;
-  border: 1px solid red;
+  // border: 1px solid red;
 }
 .col{
   float:left;
+  padding: 10px;
+  margin:15px 0.15%;
+
 }
 
 .clearfix::after{
   clear:both;
   display:table;
   content:"";
+}
+
+.text-container{
+  margin-bottom:20px;
 }

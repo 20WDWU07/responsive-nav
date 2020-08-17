@@ -1,17 +1,25 @@
 .intro-image {
   width: 100%; }
 
+.para {
+  line-height: 22px;
+  letter-spacing: 1.2px; }
+
 .row {
-  width: 100%;
-  border: 1px solid red; }
+  width: 100%; }
 
 .col {
-  float: left; }
+  float: left;
+  padding: 10px;
+  margin: 15px 0.15%; }
 
 .clearfix::after {
   clear: both;
   display: table;
   content: ""; }
+
+.text-container {
+  margin-bottom: 20px; }
 
 * {
   margin: 0;
@@ -44,8 +52,7 @@
 
   .col-12 {
     width: 100%;
-    height: auto;
-    border: 1px solid green; } }
+    height: auto; } }
 @media screen and (min-width: 501px) {
   .menu-icon {
     display: none; }
@@ -67,7 +74,6 @@
 
   .col-4 {
     width: 33%;
-    height: auto;
-    border: 1px solid blue; } }
+    height: auto; } }
 
 /*# sourceMappingURL=style.css.map */

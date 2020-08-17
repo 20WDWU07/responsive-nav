@@ -27,7 +27,7 @@
 
   .col-4{
     @include dimension(33%,auto);
-    border: 1px solid blue;
+    // border: 1px solid blue;
   }
 
 }//desktop media query ends here
