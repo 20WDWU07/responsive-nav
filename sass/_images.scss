@@ -1,4 +1,23 @@
-.intro-image{
-  width: 100%;
+// css pseudoclass nth child
+.intro-image:nth-child(0){
+  // width: 100%;
+  // opacity: 0.5;
 
+  @include imageStyle(100%,0.5);
+}
+
+.intro-image:nth-child(1){
+  // width: 100%;
+  // opacity: 0.7;
+
+  @include imageStyle(100%,0.7);
+}
+.intro-image:nth-child(2){
+  // width: 100%;
+  // opacity: 0.9;
+  @include imageStyle(100%,0.9);
+}
+
+.intro-image:hover{
+  opacity: 1.0;
 }

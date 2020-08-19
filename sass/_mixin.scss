@@ -2,3 +2,8 @@
   width:$w;
   height:$h;
 }
+
+@mixin imageStyle($width,$opacity){
+  width: $width;
+  opacity: $opacity;
+}

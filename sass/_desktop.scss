@@ -39,6 +39,7 @@
 
   .banner-container{
     background-image: url('../images/banner.jpg');
+    // opacity:0.2;
     background-size: 100vw 100vh;
     background-repeat: no-repeat;
     height: 600px;
@@ -46,16 +47,25 @@
   }
   .banner-text{
     font-size: 80px;
-    color:maroon;
-    text-align: center;
+    // color:maroon;
+    // opacity: 0.5; // value ranges from 0.0 to 1.0
+    color:rgba(255,0,0,0.5);
+    // text-align: center;
     margin-top: 20px;
+    margin-left:-100px;
     // background: white;
-    height: 100px;
-    width: 70%;
-    margin:auto;
+    height: 750px;
+    width: 30%;
+    // margin:auto;
     display:block;
+    writing-mode: vertical-rl;
   }
 
+  //pseudo class hover
+  .banner-text:hover{
+    // opacity: 1.0;
+  color:rgba(255,0,0,1); //default is 1 or 1.0;
+  }
   .col-4{
     @include dimension(33%,auto);
     // border: 1px solid blue;
