@@ -1,3 +1,8 @@
+.bodyClass {
+  background: gray;
+  color: maroon;
+  font-size: 1.5rem; }
+
 .intro-image:nth-child(0) {
   width: 100%;
   opacity: 0.5; }
@@ -12,6 +17,10 @@
 
 .intro-image:hover {
   opacity: 1.0; }
+
+.image-big {
+  width: 60%;
+  border: 2px solid maroon; }
 
 .read-more-btn, .close-btn {
   width: 100%;
@@ -33,6 +42,11 @@
 
 .top-nav a:link {
   font-size: 1rem; }
+
+.image-heading {
+  font-size: 60px;
+  color: white;
+  margin: 20px 0; }
 
 body {
   padding: 5%; }

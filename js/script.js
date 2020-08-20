@@ -4,13 +4,10 @@ console.log('js');
 // $('#para12,#close-btn1').hide();
 // $('#para22,#close-btn2').hide();
 // $('#para32,#close-btn3').hide();
+// $('.intro-image').hide();
 
 // Example2
 $('#para12, #para22, #para32').hide();
-
-
-
-
 
 
 //copy the wrapper from w3schools
@@ -51,7 +48,6 @@ $(document).ready(function(){
 
 
 
-
 // Example 2
   // Toggle is hide and show
   $('#read-more-btn1').click(function(){
@@ -66,5 +62,36 @@ $(document).ready(function(){
     $('#para32').toggle();
   });
 
+  $('#showImages').click(function(){
+    $('.intro-image').slideToggle('slow');
+  });
+  //try fadeToggle()
 
-});
+  // scrolling smoothly to a part of web page
+
+  $('#product').click(function(){
+    $('html,body').animate({
+      scrollTop: $('#introImage1').offset().top + 100}, 3000);
+    });
+
+
+    // adding or changing css properties
+  // $('body').click(function(){
+  //   $(this).css('background','gray').css('color','white');//chaining
+  //   $('p').css('border','2px solid red');
+  // });
+
+  $('body').click(function(){
+    $(this).addClass('bodyClass');
+  });
+
+
+
+  // Adding html element
+  $('#showOneMore').click(function(){
+    $('#image-container')
+    .append('<img class="image-big" src="images/cones.jpeg" alt="Image">')
+    .prepend('<h1 class="image-heading">More Images</h1>');
+  });
+
+}); //document ready
